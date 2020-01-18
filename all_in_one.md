@@ -56,31 +56,32 @@ const global = {
 hostname = *.bilibili.com, api.m.jd.com，tieba.baidu.com, music.163.com, *.rr.tv,mobwsa.ximalaya.com
 ```
 
-### 获取cookie的脚本（脚本1）
+### 获取cookie的脚本
 
-以下cookie获取之后需注释掉
+以下cookie获取之后，可注释掉（若失效，需重新获取cookie）
 
 ```
-# 此处用于哔哩哔哩cookie获取，打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com （需先登陆再获取cookie），待弹出获取成功后，即可注释掉
+# 此处用于哔哩哔哩cookie获取，加mitm后，打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com （需先登陆再获取cookie），待弹出获取成功后，即可注释掉
 http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path= https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 
-# 此处用于京东cookie获取，需要手动登录京东网页版https://bean.m.jd.com/ 签到获取Cookie, 待弹出获取成功后，即可注释掉
+# 此处用于京东cookie获取，加mitm后，需要手动登录京东网页版https://bean.m.jd.com/ 签到获取Cookie, 待弹出获取成功后，即可注释掉
 http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path= https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 
-# 此处用于百度贴吧cookie获取，当失效时需手动登录https://tieba.baidu.com/index.html贴吧获取cookie，待弹出获取成功即可
-^https?:\/\/tieba.baidu\.com url script-request-header all_in_one.js
+# 此处用于百度贴吧cookie获取，加mitm后，需手动登录https://tieba.baidu.com/index.html贴吧获取cookie，待弹出获取成功后，即可注释掉
+http-request ^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 
-# 此处用于网易云音乐cookie获取，当失效时需浏览器访问并登录:https://music.163.com/m/login 获取cookie，待弹出获取成功即可
-^https?:\/\/music\.163\.com url script-request-header all_in_one.js
+# 此处用于网易云音乐cookie获取，加mitm后，需浏览器访问并登录:https://music.163.com/m/login 获取cookie，待弹出获取成功后，即可注释掉
+http-request ^https?:\/\/music\.163\.com\/?.? script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 
-# 此处用于人人视频cookie获取，加mitm后打开APP，点击“我的”，待弹出获取成功即可
-https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action.*authcookie url script-request-header all_in_one.js
+# 此处用于人人视频cookie获取，加mitm后打开APP，点击“我的”，待弹出获取成功后，即可注释掉
+http-request ^https:\/\/api\.rr\.tv\/user\/profile script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 
-# 此处用于喜马拉雅cookie获取,浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header all_in_one.js
+# 此处用于喜马拉雅cookie获取, 加mitm后打开 APP, 访问下右下角账号，待弹出获取成功后，即可注释掉
+http-request ^https?:\/\/.*\/mobile\-user\/homePage\/.* script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
+
 ```
 
-### 签到脚本（脚本2)
+### 签到脚本
 ```
 （例：8点签到）
 cron "0 0 8 * * *" script-path= https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
