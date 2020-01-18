@@ -88,60 +88,10 @@ cron "0 0 8 * * *" script-path= https://raw.githubusercontent.com/XYXShawn/JS/ma
 
 ## 触发Cookie方式详细说明
 
-###哔哩哔哩直播签到
-1. 先在浏览器登录 `(先登录! 先登录! 先登录!)`
-2. 先把`*.bilibili.com`加到`[MITM]`
-3. 将远程脚本1、2放到`[Script]`
-4. 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
-5. 系统提示: `获取Cookie: 成功`
-6. 最后就可以把脚本1注释掉了
-
-> 脚本1是用来获取 cookie 的, 用浏览器访问一次获取 cookie 成功后就可以删掉或注释掉了, 但请确保在`登录成功`后再获取 cookie.
-
-> 脚本2是签到脚本, 每天`00:00:10`执行一次.
-
-
-## 说明
-
-1. 先在浏览器登录 `(先登录! 先登录! 先登录!)`
-2. 先把`tieba.baidu.com`加到`[MITM]`
-3. 再配置重写规则:
-   - Surge: 把两条远程脚本放到`[Script]`
-   - QuanX: 把`tieba.cookie.js`和`tieba.js`传到`On My iPhone - Quantumult X - Scripts` (传到 iCloud 相同目录也可, 注意要打开 quanx 的 iCloud 开关)
-4. 再用浏览器访问一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
-5. 系统提示: `获取Cookie: 成功`
-6. 最后就可以把第 1 条脚本注释掉了
-
-> 第 1 条脚本是用来获取 cookie 的, 用浏览器访问一次获取 cookie 成功后就可以删掉或注释掉了, 但请确保在`登录成功`后再获取 cookie.
-
-> 第 2 条脚本是签到脚本, 每天`00:00:10`执行一次.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 |                             名称                             |  方式  |                            说明                            |
 | :----------------------------------------------------------: | :----: | :--------------------------------------------------------: |
-|                           百度贴吧                           | 浏览器 |             https://tieba.baidu.com/index.html             |
-|                           百度贴吧                           |  APP   |                   进入APP,点击"我的"即可                   |
-|                          电信营业厅                          |  APP   |               进入APP,点击"我",签到即可获取                |
+|                         哔哩哔哩直播                           | 浏览器 |                先浏览器登陆：https://www.bilibili.com 或 https://live.bilibili.com ，再添加配置，再次打开浏览器获取cookie |
+|                           百度贴吧                           | 浏览器 |             先浏览器登陆：https://tieba.baidu.com 或者 https://tieba.baidu.com/index/ ，再添加配置，再次打开浏览器获取cookie |
 |                            网易云                            | 浏览器 |               https://music.163.com/m/login                |
-|                            爱奇艺                            |  APP   |                   进入APP,点击"我的"即可                   |
-|                           吾爱破解                           | 浏览器 |         https://www.52pojie.cn/home.php?mod=space          |
-|                             V2EX                             | 浏览器 |             https://www.v2ex.com/mission/daily             |
-| [微博超话](https://nave.work/%E5%BE%AE%E5%8D%9A%E8%B6%85%E8%AF%9D%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html) | 浏览器 | https://weibo.com/p/1008080c5fb650788fe5c7577f0b6ec4a34038 |
+|                         人人视频                           |  APP   |                   进入APP,访问一下个人中心                   |
+|                         喜马拉雅                          |APP |        打开 APP, 访问下右下角账号          |
