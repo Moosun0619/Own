@@ -9,7 +9,7 @@ vmess=122.190.3.102:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e
 vmess=119.188.97.32:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p03.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=香港 3
 vmess=124.95.191.129:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p14.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=香港 8
 vmess=124.95.191.143:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p31.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=香港 9
-vmess=119.147.134.166:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p32.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=香港 10
+vmess=119.147.134.166:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p32.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=香港 101
 vmess=119.147.134.179:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p02.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=香港 2
 vmess=119.188.97.157:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p07.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=韩国 1
 vmess=119.188.97.167:80, method=chacha20-ietf-poly1305, password=b8336f6d-490b-3e98-b5d0-f2ccd7d08641, obfs-host=p18.wuyiauto.com, obfs=ws, obfs-uri=/user,fast-open=false, udp-relay=false, tag=美国 2 nf
