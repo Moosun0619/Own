@@ -1,6 +1,3 @@
-vmess=温馨提示::12312, method=chacha20-ietf-poly1305, password=123, fast-open=false, udp-relay=false, tag=温馨提示:
-vmess=不能上网就换个节点:123, method=chacha20-ietf-poly1305, password=123, fast-open=false, udp-relay=false, tag=不能上网就换个节点
-vmess=不能上网就换个节点:123, method=chacha20-ietf-poly1305, password=123, fast-open=false, udp-relay=false, tag=不要只选择延迟最低的会把服务器挤爆
 vmess=v8.nu53j.cn:443, method=chacha20-ietf-poly1305, password=d50236ac-edec-4fcb-83d6-dfe22b545084, obfs-host=v8.nu53j.cn, obfs=wss, obfs-uri=/3c8026e4/,fast-open=false, udp-relay=false, tag=香港优化线路
 vmess=v15.nu53j.cn:443, method=chacha20-ietf-poly1305, password=054470a3-1e4d-47ae-82df-35c278b33ee5, obfs-host=v15.nu53j.cn, obfs=wss, obfs-uri=/527206ae/,fast-open=false, udp-relay=false, tag=香港服务器000
 vmess=v35.nu53j.cn:443, method=chacha20-ietf-poly1305, password=7b9486cd-0a3f-43eb-97ac-11263be6c559, obfs-host=v35.nu53j.cn, obfs=wss, obfs-uri=/b3266754/,fast-open=false, udp-relay=false, tag=香港新服务器06
