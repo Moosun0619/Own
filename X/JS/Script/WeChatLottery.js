@@ -5,7 +5,7 @@
 Author: t.me/makexp
 Modified by zZPiglet
 
-Quantumult X (TestFlight 190+):
+Quantumult X (TestFlight 195+, App Store 1.0.6+):
 [task_local]
 1 0 * * * WeChatLottery.js
 or remote
@@ -298,4 +298,3 @@ function compatibility() {
     }
     return { isRequest, isQuanX, isSurge, notify, write, read, post, end }
 };
-
