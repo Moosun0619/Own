@@ -64,21 +64,10 @@ Author: zZPiglet
 Quantumult X (TestFlight 190+, App Store 1.0.5+):
 [task_local]
 1 0 * * * WeChatLottery_new.js
-or remote
-1 0 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
 
 [rewrite_local]
-^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign url script-request-header WeChatLottery_new.js
-or remote
-^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign url script-request-header JS/WeChatLottery_new.js
 
-Surge 4.0+:
-[Script]
-cron "1 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
-http-request ^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
-
-
-All app:
 [mitm]
 hostname = api-hdcj.9w9.com
 
